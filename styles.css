@@ -1,0 +1,87 @@
+/* Global Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f3a683, #f7d2b4); /* Gradient Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Fancy Wrapper to Center Content */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Blur effect behind content */
+}
+
+/* Stylish Container */
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px 60px;
+    width: 80%;
+    max-width: 600px;
+    transform: translateY(30px);
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Chatbot Link Button Styling */
+.chatbot-link {
+    padding: 15px 30px;
+    background-color: #5c6bc0; /* Light Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Chatbot Link */
+.chatbot-link:hover {
+    background-color: #3f51b5;
+    transform: scale(1.1);
+}
+
+/* Keyframe Animation for Sliding Up the Container */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
